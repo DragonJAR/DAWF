@@ -1,0 +1,19 @@
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\"
+"#RUTA#\Herramientas\InformacionBaseyRAM\WinAudit.exe" /r=gsoPxuTUeERNtzDaIbMpmidcSArCOHG /L=es /T=file_timestamp /l="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#" /f="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#.html"
+WinAudit.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Facebook\"
+"#RUTA#\Herramientas\MensajeriaySocial\FBCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Facebook\FBCacheView.html"
+FBCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Mail\"
+"#RUTA#\Herramientas\MensajeriaySocial\NK2Edit.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Mail\NK2Edit.html"
+NK2Edit.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Skype\"
+"#RUTA#\Herramientas\MensajeriaySocial\SkypeContactsView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Skype\SkypeContactsView.html"
+SkypeContactsView.exe
+"#RUTA#\Herramientas\MensajeriaySocial\SkypeLogView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Mensajeria-y-Social\Skype\SkypeLogView.html"
+SkypeLogView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\"
+"#RUTA#\Herramientas\IntegridadDeArchivos\HashMyFiles.exe"  /folder "#RUTA#\Evidencias\#CARPETAPC#\" /stext "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\Hash-Archivos.txt"
+HashMyFiles.exe

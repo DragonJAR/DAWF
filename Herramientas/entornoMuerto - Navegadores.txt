@@ -1,0 +1,50 @@
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\"
+"#RUTA#\Herramientas\InformacionBaseyRAM\WinAudit.exe" /r=gsoPxuTUeERNtzDaIbMpmidcSArCOHG /L=es /T=file_timestamp /l="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#" /f="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#.html"
+WinAudit.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Ultimas-Busquedas\"
+"#RUTA#\Herramientas\Navegadores\MyLastSearch.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Ultimas-Busquedas\MyLastSearch.html"
+MyLastSearch.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Historial\"
+"#RUTA#\Herramientas\Navegadores\BrowsingHistoryView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Historial\BrowsingHistoryView.html"
+BrowsingHistoryView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Favoritos\"
+"#RUTA#\Herramientas\Navegadores\FavoritesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Favoritos\FavoritesView.html"
+FavoritesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-IE\"
+"#RUTA#\Herramientas\Navegadores\IECookiesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-IE\IECookiesView.html"
+IECookiesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Firefox\"
+"#RUTA#\Herramientas\Navegadores\MozillaCookiesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Firefox\MozillaCookiesView.html"
+MozillaCookiesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Chrome\"
+"#RUTA#\Herramientas\Navegadores\ChromeCookiesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Chrome\ChromeCookiesView.html"
+ChromeCookiesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Opera\"
+"#RUTA#\Herramientas\Navegadores\OperaCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Opera\OperaCacheView.html"
+OperaCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Flash\"
+"#RUTA#\Herramientas\Navegadores\FlashCookiesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cookies-de-Flash\FlashCookiesView.html"
+FlashCookiesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-IE\"
+"#RUTA#\Herramientas\Navegadores\IECacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-IE\IECacheView.html"
+IECacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Firefox\"
+"#RUTA#\Herramientas\Navegadores\MozillaCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Firefox\MozillaCacheView.html"
+MozillaCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Chrome\"
+"#RUTA#\Herramientas\Navegadores\ChromeCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Chrome\ChromeCacheView.html"
+ChromeCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Opera\"
+"#RUTA#\Herramientas\Navegadores\OperaCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Opera\OperaCacheView.html"
+OperaCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Safari\"
+"#RUTA#\Herramientas\Navegadores\SafariCacheView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Cache-de-Safari\SafariCacheView.html"
+SafariCacheView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Imagenes-Cache\"
+"#RUTA#\Herramientas\Navegadores\WebCacheImageInfo.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Informacion-Navegadores\Imagenes-Cache\WebCacheImageInfo.html"
+WebCacheImageInfo.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\"
+"#RUTA#\Herramientas\IntegridadDeArchivos\HashMyFiles.exe"  /folder "#RUTA#\Evidencias\#CARPETAPC#\" /stext "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\Hash-Archivos.txt"
+HashMyFiles.exe

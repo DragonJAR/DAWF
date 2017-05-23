@@ -1,0 +1,68 @@
+INFORMACION PARA CREAR O MODIFICAR PERFILES
+===========================================
+
+Para cambiar los perfiles solamente debes cambiar el nombre
+del perfil que deseas utilizar de "entornoMuerto - Archivos.txt"
+por ejemplo, a "entornoMuerto.txt", y de esta forma se ejecutaría
+lo que realices en perfil.
+
+Para crear tu propio perfil debes tener en cuenta lo siguiente:
+
+VARIABLES DE LOS PERFILES: En los perfiles se disponen de algunas
+variables que nos permiten generar contenido dinámico para que
+la herramienta funcione en cualquier entorno en el que se le corra
+tenemos entonces un pequeño número de variables que significan
+lo siguiente:
+
+#CREARDIRECTORIO# = Crea una carpeta en la ruta que le pasemos.
+
+#RUTA# = Almacena la ubicación actual del ejecutable DAWF.exe
+
+#CARPETAPC# = Almacena el nombre de la carpeta de evidencia en cada máquina.
+
+#NOMBREPC# = Almacena el nombre del computador donde se ejecute el DAWF.exe
+
+
+ESTRUCTURA DE CADA ORDEN: Para generar tu propio perfil debes tener en cuenta
+la estructura del mismo, si vas a guardar información en una carpeta debes
+crearla primero, por lo general dentro de la carpeta Evidencias y luego en
+la carpeta específica para la maquina actual (#CARPETAPC#)
+
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\(aquí el nombre de la carpeta)\"
+
+
+Después de crear la carpeta donde guardarás la salida de la aplicación
+que quieres ejecutar debes poner el ejecutable en la carpeta Herramientas,
+preferiblemente en una carpeta que informe sobre lo que hace el programa por
+ejemplo para sacar información del sistema o la ram seria "InformacionBaseyRam"
+si no hay una carpeta ya creada que encaje en lo que ejecutarás, puedes crear
+una nueva, y luego si pasarle los parámetros que requiera la aplicación.
+
+"#RUTA#\Herramientas\(carpeta de la herramienta)\Nombre.exe" /parámetros
+
+
+La ultima línea de la orden deberá ser el nombre del ejecutable que has corrido
+la idea de esto es poder supervisar cuando este termine de realizar su trabajo
+y poder seguir con la siguiente orden
+
+Nombre.exe
+
+Para el ejemplo puntual el perfil quedaría de la siguiente forma:
+
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\(aquí el nombre de la carpeta)\"
+"#RUTA#\Herramientas\(carpeta de la herramienta)\Nombre.exe" /parámetros
+Nombre.exe
+
+NO dejes espacios entre líneas y guarda el archivo como entornoMuerto.txt, ahora
+solo debes correr el DAWF y este ejecutaría y documentaria automáticamente tanto
+las ordenes ejecutadas como las fechas y firmas de los archivos generados.
+
+PD. Como recomendación recuerda no poner tildes ni "ñ" en los nombres de los archivos
+o de las carpetas ya que podría causar problemas en versiones viejas de Windows,
+de igual forma para mantener la retro-compatibilidad es recomendable poner entre
+comillas las direcciones de las carpetas y evitar el uso de espacios en blanco.
+
+PD2. Prueba siempre cada nuevo perfil en una maquina propia antes de correrlo en
+un caso real, de esta forma garantizas que esté realizando lo que tú quieres.

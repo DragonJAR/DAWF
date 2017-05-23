@@ -1,0 +1,45 @@
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\"
+"#RUTA#\Herramientas\InformacionBaseyRAM\WinAudit.exe" /r=gsoPxuTUeERNtzDaIbMpmidcSArCOHG /L=es /T=file_timestamp /l="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#" /f="#RUTA#\Evidencias\#CARPETAPC#\InformacionBase-Sistema\#NOMBREPC#.html"
+WinAudit.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\"
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Red\"
+"#RUTA#\Herramientas\ActividadEquipo\CurrPorts.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Red\PuertosAbiertos.html"
+CurrPorts.exe
+"#RUTA#\Herramientas\ActividadEquipo\WifiHistoryView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Red\WifiHistoryView.html"
+WifiHistoryView.exe
+"#RUTA#\Herramientas\ActividadEquipo\BluetoothView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Red\BluetoothView.html"
+BluetoothView.exe
+"#RUTA#\Herramientas\ActividadEquipo\NetworkOpenedFiles.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Red\NetworkOpenedFiles.html"
+NetworkOpenedFiles.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Inicio-Automatico\"
+"#RUTA#\Herramientas\ActividadEquipo\TaskSchedulerView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Inicio-Automatico\TaskSchedulerView.html"
+TaskSchedulerView.exe
+"#RUTA#\Herramientas\ActividadEquipo\WhatInStartup.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Inicio-Automatico\WhatInStartup.html"
+WhatInStartup.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Seguridad\"
+"#RUTA#\Herramientas\ActividadEquipo\SecuritySoftView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Seguridad\SecuritySoftView.html"
+SecuritySoftView.exe
+"#RUTA#\Herramientas\ActividadEquipo\TurnedOnTimesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Seguridad\TurnedOnTimesView.html"
+TurnedOnTimesView.exe
+"#RUTA#\Herramientas\ActividadEquipo\WinLogOnView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Seguridad\WinLogOnView.html"
+WinLogOnView.exe
+"#RUTA#\Herramientas\ActividadEquipo\MyEventViewer.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\Seguridad\MyEventViewer.html"
+MyEventViewer.exe
+"#RUTA#\Herramientas\ActividadEquipo\USBDeview.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\USBDeview.html"
+USBDeview.exe
+"#RUTA#\Herramientas\ActividadEquipo\LastActivityView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\LastActivityView.html"
+LastActivityView.exe
+"#RUTA#\Herramientas\ActividadEquipo\OpenedFilesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\OpenedFilesView.html"
+OpenedFilesView.exe
+"#RUTA#\Herramientas\ActividadEquipo\OpenSaveFilesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\OpenSaveFilesView.html"
+OpenSaveFilesView.exe
+"#RUTA#\Herramientas\ActividadEquipo\ExecutedProgramsList.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\ExecutedProgramsList.html"
+ExecutedProgramsList.exe
+"#RUTA#\Herramientas\ActividadEquipo\WinPrefetchView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\WinPrefetchView.html"
+WinPrefetchView.exe
+"#RUTA#\Herramientas\ActividadEquipo\RecentFilesView.exe" /shtml "#RUTA#\Evidencias\#CARPETAPC#\Actividad-Equipo\RecentFilesView.html"
+RecentFilesView.exe
+#CREARDIRECTORIO# "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\"
+"#RUTA#\Herramientas\IntegridadDeArchivos\HashMyFiles.exe"  /folder "#RUTA#\Evidencias\#CARPETAPC#\" /stext "#RUTA#\Evidencias\#CARPETAPC#\Integridad-de-Archivos\Hash-Archivos.txt"
+HashMyFiles.exe
